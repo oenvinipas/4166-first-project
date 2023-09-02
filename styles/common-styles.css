@@ -20,12 +20,16 @@
 
 /* navbar styles */
 header {
-  /* background-color: var(--jasper); */
   background-color: var(--charlotte-green);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 nav img {
-  height: 75px;
+  width: 100%;
+  height: auto;
+  max-height: 75px;
 }
 
 nav {
@@ -75,6 +79,10 @@ select:focus {
 
 /* footer styles */
 footer {
+  /* position: sticky;
+  bottom: 0;
+  right: 0;
+  left: 0; */
   background-color: var(--ore-black);
   display: flex;
   flex-direction: column;
