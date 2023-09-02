@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="../images/unccLogoThumbnail.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="../styles/common-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/newEvent.css" />
+
+    <title>49erHangout - New Event</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <header>
+      <nav>
+        <a href="../index.html" id="logo"
+          ><img src="../images/blackUnccLogo.png" alt="uncc logo"
+        /></a>
+        <ul>
+          <li class="nav-links"><a href="newEvent.html">New Event</a></li>
+          <li class="nav-links"><a href="#">Sign up</a></li>
+          <li class="nav-links"><a href="#">Log in</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- form content -->
+    <main>
+      <section class="starting" id="new-event">
+        <div class="starting-div">
+          <h1>New Event</h1>
+        </div>
+      </section>
+      <section id="form-section">
+        <div class="form-container">
+          <form action="#">
+            <div class="label-input-container">
+              <label for="category">Category</label>
+              <select name="category" id="category">
+                <option selected hidden disabled value="">
+                  --Select a category--
+                </option>
+                <option value="athletics">Athletics</option>
+                <option value="academics">Academic</option>
+                <option value="fun">Career</option>
+                <option value="creative">Creative</option>
+              </select>
+            </div>
+
+            <div class="label-input-container">
+              <label for="title">Title</label>
+              <input type="text" placeholder="title" />
+            </div>
+
+            <div class="label-input-container">
+              <label for="details">Details</label>
+              <textarea
+                name="details"
+                id="details"
+                placeholder="details"
+              ></textarea>
+            </div>
+
+            <div class="label-input-container">
+              <label for="where">Where</label>
+              <input type="text" placeholder="location" />
+            </div>
+
+            <div class="label-input-container">
+              <label for="start">Start</label>
+              <input type="datetime-local" />
+            </div>
+
+            <div class="label-input-container">
+              <label for="end">End</label>
+              <input type="datetime-local" />
+            </div>
+
+            <div class="label-input-container">
+              <label for="image">Image</label>
+              <input type="file" />
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <a href="#">
+        <img src="../images/unccLogoFooter.png" alt="uncc logo"
+      /></a>
+      <!-- <hr class="footer-hr" id="first-hr"> -->
+      <p>
+        University of North Carolina at Charlotte &copy; 2023. All rights
+        reserved
+      </p>
+      <!-- <hr class="footer-hr" id="second-hr"> -->
+      <ul>
+        <li class="social-links">
+          <a
+            href="https://www.facebook.com/UNCCharlotte/"
+            target="_blank"
+            rel="noopener"
+            ><i class="fa-brands fa-facebook" style="color: #005035"></i
+          ></a>
+        </li>
+        <li class="social-links">
+          <a
+            href="https://www.linkedin.com/school/unc-charlotte/mycompany/verification/"
+            target="_blank"
+            rel="noopener"
+            ><i class="fa-brands fa-linkedin" style="color: #005035"></i
+          ></a>
+        </li>
+        <li class="social-links">
+          <a
+            href="https://twitter.com/unccharlotte"
+            target="_blank"
+            rel="noopener"
+            ><i class="fa-brands fa-square-x-twitter" style="color: #005035"></i
+          ></a>
+        </li>
+        <li class="social-links">
+          <a
+            href="https://www.instagram.com/unccharlotte/?hl=en"
+            target="_blank"
+            rel="noopener"
+            ><i class="fa-brands fa-instagram" style="color: #005035"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

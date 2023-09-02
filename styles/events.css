@@ -1,0 +1,21 @@
+.main-container {
+  width: 80vw;
+  margin: 3rem auto;
+  /* border: 1px solid black; */
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.event {
+  display: flex;
+  padding: 1rem 3rem;
+}
+
+.image {
+  border: 1px solid black;
+}
