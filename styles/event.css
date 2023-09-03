@@ -60,8 +60,10 @@ main {
 .image img {
   width: 100%;
   height: auto;
-  min-height: 122px;
-  min-width: 122px;
+  min-height: 194.35px;
+  max-height: 200px;
+  min-width: 194.35px;
+  max-width: 200px;
 }
 
 .info-description p {

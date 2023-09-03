@@ -31,9 +31,11 @@ main {
 .info-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .info-header-h3 a {
+  width: 50ch;
   font-size: 1.5rem;
   margin-right: 4rem;
   text-decoration: none;
@@ -50,10 +52,15 @@ main {
 .info-header-options {
   display: flex;
   gap: 2rem;
+  color: var(--ore-black);
 }
 
 .info-header-options a {
   font-size: 1.4rem;
+}
+
+.info-description p {
+  width: 80ch;
 }
 
 .image {
@@ -65,8 +72,10 @@ main {
 .image img {
   width: 100%;
   height: auto;
-  min-height: 122px;
-  min-width: 122px;
+  min-height: 194.35px;
+  max-height: 200px;
+  min-width: 194.35px;
+  max-width: 200px;
 }
 
 .info-description p {
