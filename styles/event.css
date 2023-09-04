@@ -1,7 +1,7 @@
 main {
   height: 54vh;
   width: 80vw;
-  margin:  auto;
+  margin: 1rem auto;
 }
 
 .category {
@@ -20,7 +20,6 @@ main {
 
 .event {
   display: flex;
-  padding: 1rem 2rem;
 }
 
 .info {
@@ -37,7 +36,7 @@ main {
 
 .info-header-h3 h3 {
   font-size: 1.5rem;
-  margin-right: 4rem;
+  margin-right: 2rem;
   text-decoration: none;
   color: var(--ore-black);
 }
@@ -60,12 +59,53 @@ main {
 .image img {
   width: 100%;
   height: auto;
-  min-height: 194.35px;
   max-height: 200px;
-  min-width: 194.35px;
   max-width: 200px;
 }
 
 .info-description p {
   color: var(--ore-black);
+}
+
+
+@media screen and (max-width: 894px) {
+  .image img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 871px) {
+  .image img {
+    height: 125px;
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 633px) {
+  .event {
+    display: inline-block;
+  }
+
+  .image {
+    margin: 0 auto;
+    border-right: none;
+  }
+
+  .image img {
+    border-bottom: 5px solid var(--niner-gold);
+    margin: 0 auto;
+    height: 175px;
+    width: 175px;
+  }
+}
+
+@media screen and (max-width: 471px) {
+  main {
+    height: auto;
+    padding: 3rem 0;
+  }
+  .info-header {
+    flex-direction: column;
+  }
 }
