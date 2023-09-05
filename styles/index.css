@@ -53,12 +53,12 @@
   color: var(--niner-gold);
 }
 
-#events {
+.events {
   background-color: var(--charlotte-green);
   padding: 0 0 3rem;
 }
 
-#events-h2 {
+.events h2 {
   width: 80vw;
   margin: 0 auto;
   padding: 1.5rem 0;
@@ -93,9 +93,13 @@
   box-shadow: 5px 10px 10px rgb(0 0 0 / 0.5);
 }
 
-.event h2,
+.event h3,
 .event p {
   margin-bottom: 1.5rem;
+}
+
+.event h3 {
+  font-size: 1.5rem;
 }
 
 .event p {
@@ -139,5 +143,25 @@
 @media screen and (max-width: 486px) {
   .events-container {
     grid-template-columns: repeat(auto-fill, minmax(50vw, 1fr)); /* Define your grid layout */
+  }
+
+  .events h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .hero-div h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-div p {
+    font-size: 1.1rem;
+    padding: 1.3rem;
+  }
+
+  .events h2 {
+    text-align: center;
+    font-size: 1.5rem;
   }
 }

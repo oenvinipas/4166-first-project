@@ -25,18 +25,25 @@
         <a href="#" id="logo"
           ><img src="images/blackUnccLogo.png" alt="uncc logo"
         /></a>
-        <ul>
-          <li class="nav-links"><a href="pages/events.html">Events</a></li>
-          <li class="nav-links"><a href="pages/newEvent.html">New Event</a></li>
-          <li class="nav-links"><a href="#">Sign up</a></li>
-          <li class="nav-links"><a href="#">Log in</a></li>
+        <ul class="hamburger-nav-bar">
+          <input type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="pages/events.html">Events</a></li>
+            <li><a href="pages/newEvent.html">New Event</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Log in</a></li>
+            <label for="check" class="close-menu"
+              ><i class="fa-solid fa-xmark" style="color: #ffffff"></i
+            ></label>
+          </span>
+          <label for="check" class="open-menu"
+            ><i class="fa-solid fa-bars" style="color: #ffffff"></i
+          ></label>
         </ul>
-        <div class="hamburger-nav">
-          <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-        </div>
       </nav>
     </header>
 
+    <!-- main content -->
     <main>
       <section id="hero">
         <div class="hero-div">
@@ -50,11 +57,11 @@
       </section>
 
       <!-- join an upcoming event section? show 3 events ig -->
-      <section id="events">
-        <h2 id="events-h2">Looking for an event...?</h2>
+      <section class="events">
+        <h2>Looking for an event...?</h2>
         <div class="events-container">
           <div class="event">
-            <h2>Professional In Residence</h2>
+            <h3>Professional In Residence</h3>
             <p>
               Attend this Meet Up to learn how to tailor your resume for roles
               in tech, data, and analytics.
@@ -62,7 +69,7 @@
             <a href="pages/event.html" class="event-anchor">More Info</a>
           </div>
           <div class="event">
-            <h2>NINER CAREER CHALLENGE...</h2>
+            <h3>NINER CAREER CHALLENGE...</h3>
             <p>
               The University Career Center will host the Niner Career Challenge!
               This is a chance for students to Win Spring 2024 Tuition*, up to
@@ -71,7 +78,7 @@
             <a href="pages/event.html" class="event-anchor">More Info</a>
           </div>
           <div class="event">
-            <h2>49ERS WOMEN'S SOCCER...</h2>
+            <h3>49ERS WOMEN'S SOCCER...</h3>
             <p>
               <a
                 href="www.espn.com/watch/player/_/id/9701b734-9efc-4f63-ac02-20e7a3f475ad
@@ -82,7 +89,9 @@ charlotte49ers.com/calendar.aspx?game_id=17130&amp;sport_id=17"
             <a href="pages/event.html" class="event-anchor">More Info</a>
           </div>
         </div>
-        <a href="pages/events.html" class="gold-anchor stretched">See All Events</a>
+        <a href="pages/events.html" class="gold-anchor stretched"
+          >See All Events</a
+        >
       </section>
     </main>
 

@@ -16,7 +16,6 @@
     <link rel="stylesheet" type="text/css" href="../styles/common-styles.css" />
     <link rel="stylesheet" type="text/css" href="../styles/events.css" />
 
-    <!-- change accordingly -->
     <title>49erHangout - Events</title>
   </head>
   <body>
@@ -26,15 +25,21 @@
         <a href="../index.html" id="logo"
           ><img src="../images/blackUnccLogo.png" alt="uncc logo"
         /></a>
-        <ul>
-          <li class="nav-links"><a href="events.html">Events</a></li>
-          <li class="nav-links"><a href="newEvent.html">New Event</a></li>
-          <li class="nav-links"><a href="#">Sign up</a></li>
-          <li class="nav-links"><a href="#">Log in</a></li>
+        <ul class="hamburger-nav-bar">
+          <input type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="events.html">Events</a></li>
+            <li><a href="newEvent.html">New Event</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Log in</a></li>
+            <label for="check" class="close-menu"
+              ><i class="fa-solid fa-xmark" style="color: #ffffff"></i
+            ></label>
+          </span>
+          <label for="check" class="open-menu"
+            ><i class="fa-solid fa-bars" style="color: #ffffff"></i
+          ></label>
         </ul>
-        <div class="hamburger-nav">
-          <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-        </div>
       </nav>
     </header>
 

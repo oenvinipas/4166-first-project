@@ -37,29 +37,60 @@ nav {
   align-items: center;
 }
 
-nav ul {
+.menu {
   display: flex;
 }
 
-.nav-links {
+.menu li {
+  padding-left: 30px;
   list-style: none;
 }
 
-.nav-links a {
+.menu li a {
+  display: inline-block;
   text-decoration: none;
-  margin: 0 1rem;
   color: var(--quartz-white);
-  font-size: 1.1rem;
-  font-weight: 500;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  font-size: 1.2rem;
 }
 
-.nav-links a:hover {
-  color: var(--pine-green);
-  transition: 0.2s all ease-in-out;
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--niner-gold);
+  transition: 0.15s ease-in-out;
 }
 
-.hamburger-nav {
-  font-size: 2rem;
+.menu li a:hover:after {
+  width: 100%;
+}
+
+.open-menu,
+.close-menu {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+
+#check {
   display: none;
 }
 
@@ -123,33 +154,62 @@ footer ul {
 }
 
 /* Media Queries */
-
 @media screen and (max-width: 850px) {
-  nav ul {
-    display: none;
+  nav img {
+    height: 7vw;
   }
 
-  .hamburger-nav {
+  .menu li a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 662px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 81%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--ore-black);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu li {
+    margin-top: 40px;
+  }
+
+  .menu li a {
+    font-size: 1.3rem;
+    padding: 10px 0;
+  }
+
+  .open-menu,
+  .close-menu {
     display: block;
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
   }
 }
 
 @media screen and (max-width: 486px) {
   nav img {
-    height: 13vw;
+    height: 11vw;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   nav {
     padding: 2rem;
   }
 
   nav img {
     height: 11vw;
-  }
-
-  .hamburger-nav {
-    font-size: 1.5rem;
   }
 }
