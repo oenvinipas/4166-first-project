@@ -60,3 +60,7 @@ button[type="submit"]:hover {
   flex-direction: column;
   gap: 0.25rem;
 }
+
+.required {
+  color: var(--clay-red);
+}

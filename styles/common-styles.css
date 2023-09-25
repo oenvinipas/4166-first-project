@@ -94,6 +94,22 @@ nav {
   display: none;
 }
 
+.green-icon {
+  color: var(--charlotte-green);
+}
+
+.dark-icon {
+  color: var(--ore-black);
+}
+
+.white-icon {
+  color: var(--quartz-white);
+}
+
+.red-icon {
+  color: var(--clay-red);
+}
+
 /* hero text for newEvent, events, and event pages styles */
 .starting {
     height: 80vh;
